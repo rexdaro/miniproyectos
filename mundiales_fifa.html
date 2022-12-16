@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=}}
+        , initial-scale=1.0">
+        <title>mundiales</title>
+</head>
+<body>
+        
+<h1>mundiales de la fifa</h1>
+
+<br>
+
+</body>
+</html>
+
+<script>
+    
+    function saltarlinea() {
+        document.write("<br>");
+    };
+
+    function imprimir(argumento) {
+        document.write(argumento);
+        saltarlinea();
+    }
+
+    let anoMundial = 1930;
+    let limite = parseInt(prompt("ingrese el año limite a calcular"));
+
+    while (anoMundial <= limite) {
+        imprimir("hubo mundial de la fifa en el año: " + anoMundial)
+        anoMundial = anoMundial + 4;
+    }
+
+
+</script> 

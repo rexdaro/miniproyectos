@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=}}
+        , initial-scale=1.0">
+        <title>estrellas</title>
+</head>
+<body>
+        
+<h1>estrellas</h1>
+
+<br>
+
+</body>
+</html>
+
+<script>
+    
+    function saltarlinea() {
+        document.write("<br>");
+    };
+
+    function imprimir(argumento) {
+        document.write(argumento);
+        saltarlinea();
+    }
+
+  
+
+
+
+    let colums = parseInt(prompt("cuantas columnas quiere tener?"));
+    let limns = parseInt(prompt("cuantas lineas quiere?"));
+
+
+
+
+    for(let lineas = 1; lineas <= limns; lineas++) {
+        for (let columnas = 1; columnas <= colums; columnas++) {
+            document.write("*");
+        }
+        saltarlinea();
+
+
+    }
+
+    imprimir("fin.");
+
+
+</script>
+
+

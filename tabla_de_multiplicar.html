@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=}}
+        , initial-scale=1.0">
+        <title>tabla de multiplicar</title>
+</head>
+<body>
+        
+<h1>Tabla de multiplicar</h1>
+
+<br>
+
+</body>
+</html>
+
+<script>
+    
+    function saltarlinea() {
+        document.write("<br>");
+    };
+
+    function imprimir(argumento) {
+        document.write(argumento);
+        saltarlinea();
+    }
+
+
+    let numero = parseInt(prompt("quiere ver la tabla de cual numero?"))
+
+    let contador = 1;
+
+    
+
+    imprimir("while:");
+
+    while(contador <= 10) {
+        imprimir(numero*contador);
+        contador++;
+    }
+
+
+    imprimir("Ciclo For:")
+
+   for (i = 1; i <= 10 ; i++) {
+    imprimir(numero*i)
+   };
+
+
+</script> 

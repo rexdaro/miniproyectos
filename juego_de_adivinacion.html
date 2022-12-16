@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=}}
+        , initial-scale=1.0">
+        <title>Juego de adivinacion</title>
+</head>
+<body>
+        
+<h1>Juego de adivinación</h1>
+
+<br>
+
+</body>
+</html>
+
+<script>
+    
+    function saltarlinea() {
+        document.write("<br>");
+    };
+
+    function imprimir(argumento) {
+        document.write(argumento);
+        saltarlinea();
+    }
+
+    let intentos = 3;
+    let contador = 1;
+    let numeroPensado = Math.round(Math.random() * 10);
+    let numeroLanzado = parseInt(prompt("ingrese un numero"));
+
+    while (contador <= intentos) {
+        if (numeroPensado == numeroLanzado) {
+            alert("correcto el numero era: " + numeroPensado);
+            break;
+        }
+
+        else {
+            alert("incorrecto el numero era " + numeroPensado);
+            numeroLanzado = parseInt(prompt("ingrese un numero"));
+        }
+        contador++;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+

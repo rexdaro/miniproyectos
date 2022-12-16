@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=}}
+        , initial-scale=1.0">
+        <title>calcular puntos de equipo</title>
+</head>
+<body>
+        
+<h1>PUNTOS DE EQUIPO DE FOOTBALL</h1>
+
+<br>
+
+</body>
+</html>
+
+<script>
+    
+    function saltarlinea() {
+        document.write("<br>");
+    };
+
+    function imprimir(argumento) {
+        document.write(argumento);
+        saltarlinea();
+    }
+
+    let puntajepasado = parseInt(prompt("cuantos puntos tuvo el año pasado"))
+    let victorias = parseInt(prompt("informe las victorias"));
+    let empates = parseInt(prompt("informe los empates"));
+
+    puntosTotal = (victorias * 3) + empates;
+
+    
+    imprimir("el total de puntos de su esquipo es: " + puntosTotal);
+
+    if (puntosTotal > puntajepasado){
+        imprimir("el equipo esta mejor que el año pasado");
+    }
+
+    else if (puntosTotal < puntajepasado){
+        imprimir("el equipo esta peor que el año pasado");
+    }
+
+    else {
+        imprimir("el equipo esta igual que el año pasado");
+    }
+   
+
+</script> 

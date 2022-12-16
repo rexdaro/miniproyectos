@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=}}
+        , initial-scale=1.0">
+        <title>programa</title>
+</head>
+<body>
+        
+<h1>PROGRAMA</h1>
+<br>
+Juan nacio en el año...
+2000
+<br>
+pedro nacio en el año... 
+1995
+<br>
+carlo nacio en el año...
+2005
+
+<br>
+
+</body>
+</html>
+
+<script>
+    
+    function saltarlinea() {
+        document.write("<br>");
+    };
+
+    function imprimir(argumento) {
+        document.write(argumento);
+        saltarlinea();
+    }
+    
+    let ano = 2022;
+    
+    imprimir("hola amigos");
+  
+
+    let edadjuan = ano-2000;
+    let edadpedro = ano-1995;
+    let edadcarlos = ano-2005;
+
+    imprimir("juan tiene " + edadjuan + " años.");
+   
+    imprimir("pedro tiene " + edadpedro + " años.");
+   
+    imprimir("carlos tiene " + edadcarlos + " años.");
+ 
+    promedio = ((edadjuan + edadpedro + edadcarlos) / 3);
+
+    imprimir("el promedio de las edades de ellos es: " + Math.round(promedio));
+</script> 

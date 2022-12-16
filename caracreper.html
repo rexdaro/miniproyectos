@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cara de creeper</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+let pantalla = document.querySelector("canvas");
+let pincel = pantalla.getContext("2d");
+
+
+pincel.fillStyle = "white";
+pincel.fillRect(0,0,600,400);
+
+pincel.fillStyle = "darkgreen";
+pincel.fillRect(120,50,350,300);
+
+
+//ojo izquierdo
+pincel.fillStyle = "black";
+pincel.fillRect(170,110,90,90);
+
+//ojo derecho
+pincel.fillStyle = "black";
+pincel.fillRect(330,110,90,90);
+
+//nariz
+pincel.fillStyle = "black";
+pincel.fillRect(260,200,70,100);
+
+//boca izquierda
+pincel.fillStyle = "black";
+pincel.fillRect(220,240,40,110);
+
+//boca derecha
+pincel.fillStyle = "black";
+pincel.fillRect(330,240,40,110);
+
+
+
+
+//pincel.fillStyle = "green";
+//pincel.fillRect(eje x,eje y,400,300);
+
+
+</script>
+
+

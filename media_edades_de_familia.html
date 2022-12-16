@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=}}
+        , initial-scale=1.0">
+        <title>edad de familia</title>
+</head>
+<body>
+        
+<h1>Edad de familia</h1>
+
+<br>
+
+</body>
+</html>
+
+<script>
+    
+    function saltarlinea() {
+        document.write("<br>");
+    };
+
+    function imprimir(argumento) {
+        document.write(argumento);
+        saltarlinea();
+    }
+
+    let miembros = parseInt(prompt("ingrese la cantidad de miembros de la familia"));
+
+    let edades = 0;
+
+    for ( i=1 ; i <= miembros ; i++ ) {
+        edades = edades + (parseInt(prompt("ingrese la edad del miembro "+ i)));
+
+    }
+
+    imprimir("el promedio de las edades de la familia es: " + edades / miembros);
+
+</script>
